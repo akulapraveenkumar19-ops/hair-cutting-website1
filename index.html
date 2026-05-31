@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow Tone Family Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.book-btn{
+    background:linear-gradient(135deg,#ff4d79,#ff9a44);
+    color:white;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.book-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1560066984-13857928c0f6?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+}
+
+.hero-content p{
+    margin:20px 0;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#ff4d79,#ff9a44);
+}
+
+/* Sections */
+section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:30px;
+}
+
+.service-grid,
+.package-grid,
+.review-grid,
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card,
+.package,
+.review,
+.stat{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover,
+.package:hover,
+.review:hover{
+    transform:translateY(-10px);
+}
+
+/* Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* Form */
+.booking-form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.booking-form input,
+.booking-form select{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.booking-form button{
+    border:none;
+    padding:15px;
+    background:linear-gradient(135deg,#ff4d79,#ff9a44);
+    color:white;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+/* Contact */
+.call-btn,
+.whatsapp-btn{
+    display:inline-block;
+    margin:10px;
+    padding:14px 28px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+}
+
+.call-btn{
+    background:#2196f3;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+}
+
+/* Map */
+iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:20px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.nav-links{
+    position:absolute;
+    top:70px;
+    left:-100%;
+    width:100%;
+    background:#111;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+    transition:.4s;
+}
+
+.nav-links.active{
+    left:0;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.book-btn{
+    display:none;
+}
+
+.hero-content h1{
+    font-size:35px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">Glow Tone</div>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="menu-btn">☰</div>
+
+<a href="#booking" class="book-btn">Book Now</a>
+
+</nav>
+
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>Glow Tone Family Salon</h1>
+<p>Professional Hair Styling, Makeup, Facial & Beauty Services</p>
+<a href="#services" class="hero-btn">Explore Services</a>
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>Glow Tone Family Salon provides premium beauty and grooming services with experienced professionals.</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Hair Cut</h3>
+<p>Professional styling and haircut.</p>
+</div>
+
+<div class="card">
+<h3>Facial</h3>
+<p>Skin brightening treatment.</p>
+</div>
+
+<div class="card">
+<h3>Hair Spa</h3>
+<p>Healthy and shiny hair care.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Combo Packages</h2>
+
+<div class="package-grid">
+
+<div class="package">
+<h3>Basic</h3>
+<p>Hair Cut + Threading</p>
+<h4>₹200</h4>
+</div>
+
+<div class="package">
+<h3>Premium</h3>
+<p>Cleanup + Waxing</p>
+<h4>₹750</h4>
+</div>
+
+<div class="package">
+<h3>Luxury</h3>
+<p>Facial + D-Tan + Waxing</p>
+<h4>₹1150</h4>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="stats">
+
+<div class="stat">
+<h2>5000+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Beauty Services</p>
+</div>
+
+<div class="stat">
+<h2>4.9★</h2>
+<p>Rating</p>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e">
+<img src="https://images.unsplash.com/photo-1562322140-8baeececf3df">
+<img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f">
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2>Book Appointment</h2>
+
+<form class="booking-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<select>
+<option>Select Service</option>
+<option>Hair Cut</option>
+<option>Facial</option>
+<option>Hair Spa</option>
+</select>
+
+<input type="date">
+
+<button type="submit">Book Appointment</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Agriculture Colony, Hastinapuram, Hyderabad</p>
+
+<p>📞 8008866964</p>
+
+<p>📞 8985684727</p>
+
+<br>
+
+<a href="tel:8008866964" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/918985684727" class="whatsapp-btn">WhatsApp</a>
+
+</section>
+
+<section>
+
+<h2>Our Location</h2>
+
+<iframe src="https://maps.google.com/maps?q=Hastinapuram%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</section>
+
+<footer>
+© 2026 Glow Tone Family Salon. All Rights Reserved.
+</footer>
+
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+document.querySelector(".booking-form")
+.addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Appointment Booked Successfully!");
+});
+</script>
+
+</body>
+</html>

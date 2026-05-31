@@ -1,0 +1,164 @@
+/* ===============================
+   PREMIUM BUTTON DESIGN
+================================== */
+
+/* Book Now Button */
+.book-btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:linear-gradient(135deg,#ff4d79,#ff9a44);
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:all .4s ease;
+    box-shadow:0 10px 25px rgba(255,77,121,.35);
+}
+
+.book-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 35px rgba(255,77,121,.5);
+}
+
+/* Hero Button */
+.hero-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:16px 38px;
+    background:linear-gradient(135deg,#ff4d79,#ff9a44);
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:.5px;
+    transition:all .4s ease;
+    box-shadow:0 12px 30px rgba(255,77,121,.4);
+}
+
+.hero-btn:hover{
+    transform:translateY(-5px) scale(1.03);
+}
+
+/* Form Submit Button */
+.booking-form button{
+    border:none;
+    padding:16px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#ff4d79,#ff9a44);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(255,77,121,.3);
+}
+
+.booking-form button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 30px rgba(255,77,121,.5);
+}
+
+/* Call Button */
+.call-btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:50px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#2196f3,#00bcd4);
+    color:white;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(33,150,243,.35);
+}
+
+.call-btn:hover{
+    transform:translateY(-4px);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:50px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    color:white;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(37,211,102,.35);
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-4px);
+}
+
+/* Map Button */
+.map-btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:50px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(37,117,252,.35);
+}
+
+.map-btn:hover{
+    transform:translateY(-4px);
+}
+/* Service Cards */
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Package Cards */
+.package{
+    background:linear-gradient(135deg,#fff,#fff5f8);
+    padding:30px;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.package:hover{
+    transform:scale(1.05);
+}
+
+/* Gallery Images */
+.gallery img{
+    border-radius:20px;
+    transition:.5s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* Review Cards */
+.review{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.review:hover{
+    transform:translateY(-8px);
+}
